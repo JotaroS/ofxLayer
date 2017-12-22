@@ -9,7 +9,7 @@
 #define OFX_LAYER_DEFINE_LAYER_CLASS(Klass)             \
 public:                                                 \
 	const char* getClassName() const { return #Klass; } \
-	TYPE_ID getClassID() const                     \
+	ofx::Layer::TYPE_ID getClassID() const                     \
 	{                                                   \
 		return ofx::Layer::RTTI<Klass>::value();    \
 	}
